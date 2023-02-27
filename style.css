@@ -86,6 +86,7 @@
     height: 120px;
 }
 #logo img{
+    cursor: pointer;
     width: 40%;
     padding-top: 20px;
 }
@@ -135,6 +136,7 @@ ul li a{
     font-weight: bolder;
 }
 #contact{
+    cursor: pointer;
     margin-top: 20px;
     position: absolute;
     width: 155px;
@@ -145,6 +147,20 @@ ul li a{
     font-size: 1.1rem;
     font-weight: bolder;
     margin-right: 105px;
+}
+.chat_icon{
+    background-color: rgba(0, 61, 93, 1);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 12%;
+    right: 3%;
+    border-radius: 50%;
+}
+.chat_icon i{
+    color: white;
+    font-size: 2.5rem;
+    padding: 15px 18px;
 }
 .details_container{
     margin-top: -50px;
@@ -530,6 +546,9 @@ ul li a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .chat_icon{
+        display: none;
     }
 
 
