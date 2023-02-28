@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 .nav_container{
     position: relative;
     width: 100%;
@@ -147,6 +150,10 @@ ul li a{
     font-size: 1.1rem;
     font-weight: bolder;
     margin-right: 105px;
+} 
+#contact a{
+    text-decoration: none;
+    color: rgba(0, 61, 93, 1);
 }
 .chat_icon{
     background-color: rgba(0, 61, 93, 1);
@@ -373,7 +380,9 @@ ul li a{
     height: 44px;
     border: 2px solid rgba(255, 255, 255, 1);
     align-items: center;
-    
+    color: white;
+    font-size: 16px;
+    padding-left: 10px;
 }
 .name_input p{
     margin-bottom: 3px;
@@ -406,6 +415,16 @@ ul li a{
     font-size: 1.5rem;
     color: white;
     display: none;
+}
+
+.error_message{
+    color: red;
+    font-size: 20px;
+}
+
+.success_message{
+    color: green;
+    font-size: 20px;
 }
 
 /* Meadia Quries for Mobile only */
@@ -451,6 +470,7 @@ ul li a{
         left: 0%;
         width: 100%;
         height: auto;
+        padding: 0 20px;
     }
     .welcome_text_box h1{
         text-align: center;
@@ -538,7 +558,8 @@ ul li a{
         text-align: center;
     }
     .name_input input{
-        width: 300px
+        width: 300px;
+       
     }
     
     #submit_form{
@@ -546,10 +567,13 @@ ul li a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 50px 0;
     }
     .chat_icon{
         display: none;
     }
-
+    .copy_right{
+        margin-bottom: 10px;
+    }
 
 }
